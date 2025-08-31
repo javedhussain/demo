@@ -1,0 +1,50 @@
+jwt:
+  errors:
+    token:
+      invalid: "Unable to get JWT Token or JWT Token has expired"
+      missing: "JWT Token is missing"
+      malformed: "JWT Token does not begin with Bearer String"
+      expired: "JWT Token has expired"
+      unsupported: "Unsupported JWT Token"
+      empty: "JWT Token cannot be empty"
+  success:
+    token:
+      generated: "JWT Token generated successfully"
+      validated: "JWT Token validated successfully"
+
+auth:
+  errors:
+    login:
+      invalid_credentials: "Invalid username or password"
+      account_locked: "Account is locked"
+      account_disabled: "Account is disabled"
+      account_expired: "Account has expired"
+    registration:
+      username_exists: "Username already exists"
+      email_exists: "Email already exists"
+      validation_error: "Invalid registration data"
+  success:
+    login: "Login successful"
+    registration: "Registration successful"
+    logout: "Logout successful"
+
+validation:
+  errors:
+    user:
+      username:
+        required: "Username is required"
+        size: "Username must be between 3 and 50 characters"
+      password:
+        required: "Password is required"
+        pattern: "Password must contain at least 8 characters, including numbers and letters"
+      email:
+        required: "Email is required"
+        invalid: "Invalid email format"
+
+database:
+  errors:
+    connection: "Unable to connect to database"
+    query: "Error executing database query"
+    constraint: "Database constraint violation"
+  success:
+    connection: "Successfully connected to database"
