@@ -1,0 +1,8 @@
+api:
+  client:
+    baseUrl: https://api.external-service.com
+    apiKey: your-api-key
+    connectTimeout: 5000
+    readTimeout: 5000
+    maxRetries: 3
+    retryDelay: 1000
